@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Testwork</string>
+    <string name="delete_note_dialog_message">Vai tiešām vēlaties izdzēst šo piezīmi?</string>
+    <string name="delete_note_dialog_title">Dzēst piezīmi</string>
+    <string name="delete_text">Dzēst</string>
+    <string name="note_deleted_text">Piezīme izdzēsta</string>
+
+    <string name="cancel_text">Atcelt</string>
+    <string name="note_details_text">Piezīmju detaļas</string>
+    <string name="title_of_the_note_dummy">"Piezīmes virsraksts "</string>
+    <string name="actual_note_text_dummy">Faktiskais piezīmes teksts</string>
+    <string name="title_text">Virsraksts</string>
+    <string name="note_text">Piezīmes teksts...</string>
+</resources>

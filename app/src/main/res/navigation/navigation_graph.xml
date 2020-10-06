@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragment_notes_list">
+
+    <fragment
+        android:id="@+id/fragment_notes_list"
+        android:name="com.android.testwork.fragments.NotesListFragment"
+        android:label="fragment_notes_list"
+        tools:layout="@layout/fragment_notes_list" >
+        <action
+            android:id="@+id/action_fragment_notes_list_to_noteScreenFragment"
+            app:destination="@id/fragment_note_screen"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false" />
+
+        <argument android:name="note_id"
+            app:argType="integer" />
+
+        <argument android:name="creating_note"
+            app:argType="boolean"
+            android:defaultValue="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_note_screen"
+        android:name="com.android.testwork.fragments.NoteScreenFragment"
+        android:label="@string/note_details_text"
+        tools:layout="@layout/fragment_note_screen" >
+
+        <action
+            android:id="@+id/action_fragment_note_screen_to_fragment_notes_list"
+            app:destination="@id/fragment_notes_list"
+            app:popUpToInclusive="true"/>
+
+        <argument android:name="note_id"
+            app:argType="integer" />
+
+        <argument android:name="creating_note"
+            app:argType="boolean"
+            android:defaultValue="false" />
+
+    </fragment>
+
+
+</navigation>

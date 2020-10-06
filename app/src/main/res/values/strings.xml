@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Testwork</string>
+
+    <string name="delete_note_dialog_message">Are you sure you want to delete this note ?</string>
+    <string name="delete_note_dialog_title">Delete note</string>
+    <string name="delete_text">Delete</string>
+    <string name="note_deleted_text">Note deleted</string>
+
+    <string name="cancel_text">Cancel</string>
+    <string name="note_details_text">Note details</string>
+    <string name="title_of_the_note_dummy">Title of the note</string>
+    <string name="actual_note_text_dummy">Actual note text</string>
+    <string name="title_text">Title</string>
+    <string name="note_text">Note text...</string>
+</resources>
